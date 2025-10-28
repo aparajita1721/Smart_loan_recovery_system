@@ -108,28 +108,6 @@ if page == "Portfolio Dashboard":
 
     st.markdown("---")
 
-    st.subheader("Loan Amount Distribution & Income Relationship")
-    fig1 = px.histogram(
-        df,
-        x='Loan_Amount',
-        nbins=30,
-        marginal="violin",
-        opacity=0.7,
-        title="Loan Amount Distribution",
-        labels={'Loan_Amount': "Loan Amount ($)"}
-    )
-
-    # density curve
-    density_y = px.histogram(df, x='Loan_Amount', nbins=30, histnorm='probability density').data[0]['y']
-    fig1.add_trace(go.Scatter(
-        x=sorted(df['Loan_Amount']),
-        y=density_y,
-        mode='lines',
-        name='Density Curve',
-        line=dict(color='red', width=2)
-    ))
-    st.plotly_chart(fig1, use_container_width=True)
-
     st.subheader("Monthly Income vs Loan Amount (Colored by Recovery)")
     fig2 = px.scatter(
         df,
@@ -359,4 +337,5 @@ if page == "Borrower Strategy Assistant":
 
 #Footer
 st.markdown("---")
+
 st.caption("Smart Loan Recovery System • Prototype dashboard")
