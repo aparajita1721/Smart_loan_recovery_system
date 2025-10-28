@@ -97,9 +97,12 @@ if page == "Portfolio Dashboard":
 
     col1, col2, col3, col4 = st.columns(4)
     total_loans = len(df)
+    clean_status = df["Recovery_Status"].astype(str).str.strip().str.lower()
+    
     recovered_pct = (
-    df["Recovery_Status"].isin(["Partially Recovered", "Fully Recovered"]).mean() * 100.0
-)
+    clean_status.isin(["partially recovered", "fully recovered"]).mean() * 100.0
+    )
+
     avg_dpd = df["Days_Past_Due"].mean()
     avg_missed = df["Num_Missed_Payments"].mean()
 
@@ -341,4 +344,5 @@ if page == "Borrower Strategy Assistant":
 st.markdown("---")
 
 st.caption("Smart Loan Recovery System • Prototype dashboard")
+
 
