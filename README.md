@@ -47,8 +47,8 @@ This project automates that process using **Machine Learning**:
 
 ### 1) Clone the repository
 ```bash
-git clone https://github.com/your-username/smart-loan-recovery-system.git
-cd smart-loan-recovery-system
+git clone https://github.com/aparajita1721/Smart_loan_recovery_system.git
+cd Smart_loan_recovery_system
 ```
 ### 2) Create and activate virtual environment
 ```bash
