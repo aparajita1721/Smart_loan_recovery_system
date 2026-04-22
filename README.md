@@ -1,9 +1,8 @@
 # Smart Loan Recovery System
 
-> An AI-powered system for **loan risk segmentation**, **borrower profiling**, and **recovery strategy optimization**, built with **Python**, **Machine Learning**, and **Streamlit**.
+> An AI-powered system for **loan risk segmentation**, **borrower profiling**, and **recovery strategy optimization**, built with **Python**, and **Machine Learning**.
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python)
-![Streamlit](https://img.shields.io/badge/Streamlit-app-success?logo=streamlit)
 ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-ML-orange?logo=scikitlearn)
 ![Plotly](https://img.shields.io/badge/Plotly-visualization-blueviolet?logo=plotly)
 
@@ -18,7 +17,6 @@ This project automates that process using **Machine Learning**:
 - Segments borrowers based on financial and behavioral factors using **K-Means clustering**.  
 - Predicts **loan default risk** using a **Random Forest classifier**.  
 - Generates **personalized recovery strategies**- ranging from reminders to legal escalation.  
-- Presents all insights via an **interactive Streamlit dashboard**.
 
 ---
 
@@ -28,18 +26,10 @@ This project automates that process using **Machine Learning**:
 |-----------|------------------|
 | **Language** | Python |
 | **IDE** | Visual Studio Code |
-| **Framework / UI** | Streamlit |
 | **Data Processing** | Pandas, NumPy |
 | **Machine Learning** | Scikit-learn (KMeans, RandomForestClassifier) |
 | **Visualization** | Plotly, Plotly Express |
 | **Version Control** | Git + GitHub |
-| **Deployment** | Streamlit Cloud |
-
----
-
-## Demo
-
-🔗 **Live App:** [Smart Loan Recovery System](https://loansystempy-gpnsbgqrnipcli4eqymwwd.streamlit.app/)  
 
 ---
 
@@ -59,9 +49,9 @@ venv\Scripts\activate
 ```bash
 pip install -r requirements.txt
 ```
- ### 4) Run the app
+ ### 4) Run the file
  ```bash
-streamlit run loan_system.py
+python loan_system.py
 ```
 
 
